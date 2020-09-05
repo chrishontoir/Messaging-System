@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  api:
+    build: ./api
+    container_name: api
+    ports:
+      - 8080:8080
+  ui:
+    build: ./ui
+    container_name: ui
+    ports:
+      - 3000:3000
