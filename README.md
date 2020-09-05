@@ -3,7 +3,16 @@
 - **Deno** 🦕
 
 ## **Start**
-    deno run --allow-net mod.ts
+### **API**
+    deno run --allow-net api/mod.ts
+---
+    docker-compose up --build api
+
+### **UI**
+    deno run --allow-net --allow-read ui/mod.ts
+---
+    docker-compose up --build ui
+
 
 ## **Unit Tests**
-    deno test test/unit/
+    deno test api/test/unit/
