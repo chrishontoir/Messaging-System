@@ -1,1 +1,1 @@
-import "./src/app.ts";
+import "./src/server.jsx";
